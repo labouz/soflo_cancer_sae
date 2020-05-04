@@ -1,0 +1,15 @@
+---
+author: "Layla Bouzoubaa"
+title: "Table 1: Socio-Demog Data by Region"
+  subtitle: "Torabi Paper"
+date: '`r Sys.Date()`'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	message = FALSE,
+	warning = FALSE
+)
+library(tidyverse)
+```
