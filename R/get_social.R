@@ -44,6 +44,8 @@ regions <- bind_rows(
                           TRUE ~ fips)) %>% 
   mutate(fips = paste0("12", str_pad(fips, 3, side = "left", pad = "0")))
 
+write_rds(regions, "./data/county_regions.rds")
+
 get_regions <- function(var_name, numerator, denominator){
   #browser()
  
